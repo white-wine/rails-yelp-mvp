@@ -3,9 +3,9 @@
 one:
   content: MyText
   rating: 1
-  references: 
+  restaurant: one
 
 two:
   content: MyText
   rating: 1
-  references: 
+  restaurant: two

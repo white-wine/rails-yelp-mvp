@@ -1,0 +1,8 @@
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name, label: 'Enter a name please', error: 'Name is mandatory, please specify' %>
+  <%= f.input :address, label: 'Enter an address please', error: 'Address is mandatory, please specify' %>
+  <%= f.input :phone_number, label: 'Enter a phone number please', error: 'Phone number is mandatory, please specify' %>
+  <%= f.input :category, label: 'Enter a category please', error: 'Category is mandatory, please specify', collection: Restaurant::TYPE %>
+  <%= f.submit "add a restaurant", class: "btn btn-primary" %>
+
+<% end %>
